@@ -13,7 +13,7 @@ otra manera, se cambia en `BepInEx\config\masterwin.dressmaker.es.cfg` (`NombreE
 
 ## Descargar
 
-**Próximamente.** La descarga se publicará aquí y en Nexus Mods en cuanto esté lista.
+**[Última versión](../../releases/latest)** · también en [Nexus Mods](https://www.nexusmods.com/dressmaker/mods/185).
 
 ## Instalar
 
@@ -49,7 +49,7 @@ textos nuevos, salen en inglés hasta que se traduzcan: nunca en blanco.
 
 - Plugin y textos de objetos rehechos desde las tablas del juego: **Masterwin**.
 - Base de los diálogos, la interfaz y el tutorial: [Dress Maker ESP](https://www.nexusmods.com/dressmaker/mods/32)
-  de **Gabssby**, revisada y corregida.
+  de **Gabssby**, revisada y corregida, con su permiso. ¡Gracias, Gabssby!
 
 Plugin: [MIT](LICENSE). Nuestras traducciones: CC BY 4.0 (detalle en el zip, `LICENSE-traduccion.md`).
 Dressmaker es de Cozy Lives; este mod no es oficial.
@@ -61,5 +61,5 @@ Dressmaker es de Cozy Lives; este mod no es oficial.
 Adds **Spanish** as one more language in *Options > Language* (the button reads «Para mi hija
 Emma», "For my daughter Emma"; rename it in `BepInEx\config\masterwin.dressmaker.es.cfg`).
 Install [BepInEx 5 x64](https://github.com/BepInEx/BepInEx/releases) next to `Dressmaker.exe`,
-run the game once, then unzip the release into the same folder (coming soon).
+run the game once, then unzip the [latest release](../../releases/latest) into the same folder.
 Tested on build 410.44874e6. MIT (plugin) · CC BY 4.0 (our translations).
