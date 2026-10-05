@@ -17,12 +17,38 @@ otra manera, se cambia en `BepInEx\config\masterwin.dressmaker.es.cfg` (`NombreE
 
 ## Instalar
 
-1. Instala [BepInEx 5 x64](https://github.com/BepInEx/BepInEx/releases) en la carpeta donde está
-   `Dressmaker.exe` (no un nivel por encima) y abre el juego una vez.
-2. Descomprime el zip en esa misma carpeta (se crea `BepInEx\plugins\DressmakerES`).
-3. En el juego: *Opciones > Idioma > Para mi hija Emma*.
+La carpeta del juego se abre en Steam: clic derecho en Dressmaker > *Administrar > Explorar archivos locales*.
 
-Si tienes **Dress Maker ESP** instalado, quítalo (borra `BepInEx\plugins\DressMakerSpanish`): escribe
+### Windows
+
+1. Descomprime `BepInEx_win_x64_5.4.23.5.zip` ([BepInEx](https://github.com/BepInEx/BepInEx/releases))
+   en la carpeta del juego, no en una subcarpeta: `winhttp.dll` y `BepInEx` deben quedar junto a `Dressmaker.exe`.
+2. Abre el juego una vez y ciérralo.
+3. Descomprime el zip del mod en esa misma carpeta (se crea `BepInEx\plugins\DressmakerES`).
+4. En el juego: *Opciones > Idioma > Para mi hija Emma*.
+
+### Mac (sin probar)
+
+1. Descomprime `BepInEx_macos_universal_5.4.23.5.zip` ([BepInEx](https://github.com/BepInEx/BepInEx/releases))
+   en la carpeta del juego, junto a la app.
+2. Abre `run_bepinex.sh` con TextEdit y cambia:
+   - `executable_name=""` → `executable_name="Dressmaker.app"` (el nombre de la app del juego).
+   - **Solo en Mac con chip Apple (M1, M2…):** `export ARCHPREFERENCE="arm64,x86_64"` →
+     `export ARCHPREFERENCE="x86_64,arm64"`. Sin esto el mod no carga y no avisa.
+3. En Terminal, escribe `cd ` (con espacio), arrastra la carpeta del juego, pulsa Intro y ejecuta:
+   ```
+   chmod +x run_bepinex.sh
+   xattr -dr com.apple.quarantine .
+   ```
+4. En Steam: Dressmaker > *Propiedades > Opciones de lanzamiento*:
+   `"/ruta/completa/a/run_bepinex.sh" %command%` (arrastra el archivo a la casilla para la ruta).
+5. Abre el juego desde Steam una vez y ciérralo (debe aparecer `BepInEx/plugins`).
+6. Descomprime el zip del mod en la carpeta del juego (se crea `BepInEx/plugins/DressmakerES`).
+7. En el juego: *Opciones > Idioma > Para mi hija Emma*.
+
+En Mac con chip Apple el juego va en modo Intel (Rosetta): los cambios de pantalla pueden tardar un poco más.
+
+Si tienes **Dress Maker ESP** instalado, quítalo (borra `BepInEx/plugins/DressMakerSpanish`): escribe
 el español encima del inglés y los dos a la vez se pisan.
 
 ## Qué traduce
@@ -62,4 +88,7 @@ Adds **Spanish** as one more language in *Options > Language* (the button reads 
 Emma», "For my daughter Emma"; rename it in `BepInEx\config\masterwin.dressmaker.es.cfg`).
 Install [BepInEx 5 x64](https://github.com/BepInEx/BepInEx/releases) next to `Dressmaker.exe`,
 run the game once, then unzip the [latest release](../../releases/latest) into the same folder.
+**Mac** (untested): use `BepInEx_macos_universal`, set `executable_name="Dressmaker.app"` in
+`run_bepinex.sh`, on Apple Silicon change `ARCHPREFERENCE` to `"x86_64,arm64"` (plugins won't load
+natively), then launch with `"/path/to/run_bepinex.sh" %command%` in Steam's launch options.
 Tested on build 410.44874e6. MIT (plugin) · CC BY 4.0 (our translations).
