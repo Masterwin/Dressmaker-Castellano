@@ -55,10 +55,10 @@ el español encima del inglés y los dos a la vez se pisan.
 
 | Tabla | Traducido |
 |---|---|
-| Telas, accesorios, patrones, piezas, encargos, colores… | 1 909 de 1 930 |
+| Telas, accesorios, patrones, piezas, encargos, colores… | 1 920 de 1 941 |
 | Diálogos | 3 578 de 3 677 (lo que falta son «…», «Oh.», «Hmm.») |
-| Interfaz | 208 de 208 |
-| Tutorial | 71 de 71 |
+| Interfaz | 221 de 221 |
+| Tutorial | 73 de 73 |
 
 También los dos avisos que el juego tiene fijos en inglés: «Desbloqueado: …» y «¡No tienes telas!».
 Se quedan en inglés los nombres de las clientas y las 5 imágenes con texto (cartel de la tienda,
@@ -66,7 +66,7 @@ folleto de prestigio, periódico y título).
 
 ## Versión del juego
 
-Probado en la build **410.44874e6** (24/09/2026) con BepInEx 5.4.23.5 x64. Si un parche añade
+Probado en la build **443.cf23fc7** (15/10/2026) y en la 410.44874e6, con BepInEx 5.4.23.5 x64. Si un parche añade
 textos nuevos, salen en inglés hasta que se traduzcan: nunca en blanco.
 
 ¿Ves un texto cortado, montado o mal traducido? Abre un [issue](../../issues) con una captura.
@@ -91,4 +91,4 @@ run the game once, then unzip the [latest release](../../releases/latest) into t
 **Mac** (untested): use `BepInEx_macos_universal`, set `executable_name="Dressmaker.app"` in
 `run_bepinex.sh`, on Apple Silicon change `ARCHPREFERENCE` to `"x86_64,arm64"` (plugins won't load
 natively), then launch with `"/path/to/run_bepinex.sh" %command%` in Steam's launch options.
-Tested on build 410.44874e6. MIT (plugin) · CC BY 4.0 (our translations).
+Tested on builds 443.cf23fc7 and 410.44874e6. MIT (plugin) · CC BY 4.0 (our translations).
